@@ -9,6 +9,8 @@ let common_opam_pins =
         ~help:"Pin Ketrew to a given branch/tag.";
       env "pin_coclobas"
         ~help:"Pin Coclobas to a given branch/tag.";
+      env "pin_biokepi"
+        ~help:"Pin Biokepi to a given branch/tag.";
       env "pin_trakeva"
         ~help:"Pin Trakeva to a given branch/tag.";
     ]
@@ -21,6 +23,7 @@ let common_opam_pins =
       List.filter_opt [
         pin_opt "hammerlab/ketrew" @@ conf_opt "pin_ketrew";
         pin_opt "hammerlab/coclobas" @@ conf_opt "pin_coclobas";
+        pin_opt "eric-czech/biokepi" @@ conf_opt "pin_biokepi";
         pin_opt "smondet/trakeva" @@ conf_opt "pin_trakeva";
       ]
   end
